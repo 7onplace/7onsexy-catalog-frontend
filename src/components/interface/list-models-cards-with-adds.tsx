@@ -62,7 +62,8 @@ const CardModel = ({ model }: { model: ModelsProps }) => {
   return (
     <div key={model.id}>
       <Card.Root>
-        {model &&
+        {/* habilita estrela de PRO  */}
+        {/* {model &&
           model.featureFlags &&
           model.featureFlags.length > 0 &&
           model.featureFlags.map((flag) => {
@@ -74,7 +75,7 @@ const CardModel = ({ model }: { model: ModelsProps }) => {
                 />
               );
             }
-          })}
+          })} */}
         <Card.Actions>
           <Card.Delete modelId={model.username} />
           <Card.Edit model={model} />
