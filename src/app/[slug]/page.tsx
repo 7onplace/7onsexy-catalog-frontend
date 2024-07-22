@@ -39,12 +39,11 @@ export default async function Model({ params }: { params: { slug: string } }) {
             {/* dataModel.featureFlags.length > 0 && */}
             {/* dataModel.featureFlags.map((flag: Flags) => { */}
               {/* if (flag.name === "enable_create_button") */}
-                return (
+
                   <ModelDetails.AddNewButtonModal
                     key={dataModel.id}
                     model={dataModel}
                   />
-                );
             {/* })} */}
           <a
             href={dataModel.telegramVip}
@@ -60,7 +59,7 @@ export default async function Model({ params }: { params: { slug: string } }) {
           </a>
           {dataModel.buttons &&
             dataModel.buttons.length > 0 &&
-            dataModel.featureFlags.length > 0 &&
+            // dataModel.featureFlags.length > 0 &&
             dataModel.buttons.map((but: ModelsButtons) => {
               if (
                 but.url !== null &&
