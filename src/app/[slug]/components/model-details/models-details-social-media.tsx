@@ -17,9 +17,9 @@ export const ModelDetailsSocialMedia = ({
 }: ModelSocialMediaProps) => {
   const Icon = icon;
 
-  const isPro =
-    flags && flags.map((flag: any) => flag.includes("enable_social_media"));
-  if (href === "#" || href === null || !href || !isPro) {
+  // const isPro =
+    // flags && flags.map((flag: any) => flag.includes("enable_social_media"));
+  // if (href === "#" || href === null || !href || !isPro) {
     return (
       <div>
         <Icon
@@ -29,7 +29,7 @@ export const ModelDetailsSocialMedia = ({
         />
       </div>
     );
-  }
+  // }
 
   return (
     <div>

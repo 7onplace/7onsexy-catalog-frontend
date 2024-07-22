@@ -34,18 +34,18 @@ export default async function Model({ params }: { params: { slug: string } }) {
       <div className="w-full md:my-4 my-10">
         <CarouselRoot model={dataModel} />
         <FlexDiv col>
-          {session &&
-            dataModel.featureFlags &&
-            dataModel.featureFlags.length > 0 &&
-            dataModel.featureFlags.map((flag: Flags) => {
-              if (flag.name === "enable_create_button")
+          {/* {session && */}
+            {/* dataModel.featureFlags && */}
+            {/* dataModel.featureFlags.length > 0 && */}
+            {/* dataModel.featureFlags.map((flag: Flags) => { */}
+              {/* if (flag.name === "enable_create_button") */}
                 return (
                   <ModelDetails.AddNewButtonModal
-                    key={flag.name}
+                    key={dataModel.id}
                     model={dataModel}
                   />
                 );
-            })}
+            {/* })} */}
           <a
             href={dataModel.telegramVip}
             target="_blank"
