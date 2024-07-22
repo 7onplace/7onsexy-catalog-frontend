@@ -17,12 +17,12 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        '7onp': "url('https://7onsexycatalogo.s3.amazonaws.com/Fundo+Marketplace.png')"
+        // '7onp': "url('https://7onsexycatalogo.s3.amazonaws.com/Fundo+Marketplace.png')"
       },
       screens: {
         tablet: "750px",
         vsm: { max: "374px" },
-        '2xl': {max: '1360px'}
+        '2xl': { max: '1360px' }
       },
       gridTemplateColumns: {
         "auto-fit-100": "repeat(auto-fit, minmax(100px, 1fr))",
